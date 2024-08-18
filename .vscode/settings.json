@@ -1,0 +1,12 @@
+{
+    "rust-analyzer.cargo.features": [
+        //"deadlock_detection",
+        // "single_thread",
+        // "emulate_web_time",
+        // "wasm",
+    ],
+    "rust-analyzer.cargo.cfgs": {
+    //    "web_sys_unstable_apis": ""
+    },
+    "rust-analyzer.cargo.target": "armv7-linux-androideabi"
+}

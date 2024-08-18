@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    package="org.ved_s.android_test">
+
+    <!-- <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" /> -->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Android test"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:hasCode="false">
+        <activity
+            android:name="android.app.NativeActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="Android test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.lib_name" android:value="android_test" />
+        </activity>
+    </application>
+
+</manifest>
